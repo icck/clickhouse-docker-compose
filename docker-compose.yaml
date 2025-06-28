@@ -2,7 +2,12 @@ services:
   clickhouse:
     image: clickhouse/clickhouse-server:latest
     container_name: clickhouse
-    ports: 
+    environment:
+      CLICKHOUSE_DB: mydb
+      CLICKHOUSE_USER: myuser
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+      CLICKHOUSE_PASSWORD: password
+    ports:
       - "8123:8123" # http
       - "9001:9000" # naitive tcp, 9000 portが私の環境では使用済だったので9001に振り替えた
     volumes:
