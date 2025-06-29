@@ -1,6 +1,7 @@
 # ClickHouse + Grafana Docker Compose 環境
 
-ClickHouseとGrafanaを統合したDocker Compose環境です。Apple Silicon (M1/M2) Macにも対応しています。
+ClickHouseとGrafanaを統合したDocker Compose環境です。
+動作を確認する練習目的であるため、本番想定のセキュリティ設定は行っていません。
 
 ## 📋 概要
 
